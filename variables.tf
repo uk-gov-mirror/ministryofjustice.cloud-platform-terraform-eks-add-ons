@@ -25,8 +25,19 @@ variable "addon_create_coredns" {
   default     = true
 }
 
+variable "addon_create_guardduty_agent" {
+  description = "Create guardduty agent addon"
+  type        = bool
+  default     = true
+}
+
 variable "addon_vpc_cni_version" {
   description = "Version for addon_create_vpc_cni"
+  type        = string
+}
+
+variable "addon_guardduty_agent_version" {
+  description = "Version for addon_guardduty_agent_version"
   type        = string
 }
 

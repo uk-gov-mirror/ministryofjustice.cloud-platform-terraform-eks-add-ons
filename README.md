@@ -45,6 +45,7 @@ module "aws_eks_addons" {
 | Name | Type |
 |------|------|
 | [aws_eks_addon.coredns](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/eks_addon) | resource |
+| [aws_eks_addon.guardduty_agent](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/eks_addon) | resource |
 | [aws_eks_addon.kube_proxy](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/eks_addon) | resource |
 | [aws_eks_addon.vpc_cni](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/eks_addon) | resource |
 | [aws_iam_policy.vpc_cni](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_policy) | resource |
@@ -57,8 +58,10 @@ module "aws_eks_addons" {
 |------|-------------|------|---------|:--------:|
 | <a name="input_addon_coredns_version"></a> [addon\_coredns\_version](#input\_addon\_coredns\_version) | Version for addon\_coredns\_version | `string` | n/a | yes |
 | <a name="input_addon_create_coredns"></a> [addon\_create\_coredns](#input\_addon\_create\_coredns) | Create coredns addon | `bool` | `true` | no |
+| <a name="input_addon_create_guardduty_agent"></a> [addon\_create\_guardduty\_agent](#input\_addon\_create\_guardduty\_agent) | Create guardduty agent addon | `bool` | `true` | no |
 | <a name="input_addon_create_kube_proxy"></a> [addon\_create\_kube\_proxy](#input\_addon\_create\_kube\_proxy) | Create kube\_proxy addon | `bool` | `true` | no |
 | <a name="input_addon_create_vpc_cni"></a> [addon\_create\_vpc\_cni](#input\_addon\_create\_vpc\_cni) | Create vpc\_cni addon | `bool` | `true` | no |
+| <a name="input_addon_guardduty_agent_version"></a> [addon\_guardduty\_agent\_version](#input\_addon\_guardduty\_agent\_version) | Version for addon\_guardduty\_agent\_version | `string` | n/a | yes |
 | <a name="input_addon_kube_proxy_version"></a> [addon\_kube\_proxy\_version](#input\_addon\_kube\_proxy\_version) | Version for addon\_kube\_proxy\_version | `string` | n/a | yes |
 | <a name="input_addon_tags"></a> [addon\_tags](#input\_addon\_tags) | Cluster addon tags | `map(string)` | `{}` | no |
 | <a name="input_addon_vpc_cni_version"></a> [addon\_vpc\_cni\_version](#input\_addon\_vpc\_cni\_version) | Version for addon\_create\_vpc\_cni | `string` | n/a | yes |
